@@ -1,0 +1,33 @@
+#Python veri tipleri
+Başlıca 7 çeşit veri tipi vardır.
+1.Metin tipleri: str: metinsel ifadelerdir.çıktı alınacağı zaman iki çift tırnak arasına yazılması gerekir.
+2.Sayısal tipler: int , float , complex (int: integer: tam sayılardır , float:ondalık sayılardır., complex karmaşık sayılardır.
+3.Dizi tipleri:  list , tuple , range (list ve tuple sıralı değer kümesidir. list de köşeli parantez kullanılır ve değişebilir. 
+tuple da yuvarlak parantez kullanılır ifadeler değişmez. range: belli aralıkta bulunan sayıları gösteririz.
+4.Adresleme tipleri: dict:key – value ( anahtar – değer) çiftlerinden oluşur. Key değeri mutlaka benzersiz ve değişmez bir nesne olmalıdır. TAM ANLAMADIM.
+5.Küme tipleri: set , frozenset set: listeleri matematiksel küme haline getirmeye yarar. frozen set: listeleri matematiksel küme haline getirir ancak listelerde
+herhangi bir güncelleme ekleme çıkarma yapılmasını engeller.
+6.Mantıksal tipler: bool ifadenin doğru veya yanlış olduğu çıktısını verir.
+7.Binary tipler: bytes , bytearray , memoryview bytes:Bytes veri tipi kendi içerisinde bir fonksiyon olarak kullanılmaktadır. 
+Bytes, verilmiş olan boyutta ve girilen verilerle başlatılan değişmez bir bayt nesnesini kendi içerisinde döndürür. Çıktısı: b'girilenİfade' şeklinde olur.
+bytearray: byte la oluşturduğumuz verileri değiştirmek için kullanırız.
+memoryview bytes: Bellek durumunu görüntülemek için kullanılır.
+
+#Veri tipi örnekleri
+int : sitede yazan tam sayıların tamamı 
+str : sitede yazan metinsel ifadelerin tamamı
+önceki ders, bitir ve devam et bool veri tipine örnektir.
+anasayfadaki kategori liste veri  tipine örnektir.
+
+#Siteye girerken kullanıcı adı ve şifre bilgileri dooğru girilirse siteye sorunsuz ulaşılabilir. Bu bir şart bloğudur.
+
+Email = "kerimaydin.1998@gmail.com"
+Password = "kerim1234"
+
+EntereMail = input('Mail adresini gir: ')
+EnterPassword = input('Sifreni gir : ')
+
+if (EntereMail == Email and EnterPassword == Password):
+    print('Giris basarili')
+else:
+    print("Hatali sifre veya mail lutfen tekrar deneyiniz")
