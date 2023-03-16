@@ -1,0 +1,15 @@
+öğrenci_listesi = ["kerim aydın","ali yıldız","buse küpeli","cemil dursun"]
+print(öğrenci listesi)
+
+öğrenciİsimSoyisim=input("eklemek istediğiniz öğrencinin isim ve soyismini yazınız: ")
+öğrenci listesi.append(öğrenciİsimSoyisim)
+print(öğrenci listesi)
+
+öğrenciİsimSoyisim=input("eklemek istediğiniz öğrencinin isim ve soyismini yazınız: ")
+öğrenci listesi.remove(öğrenciİsimSoyisim)
+print(öğrenci listesi)
+
+öğrenci_sayısı=int(input("kaç öğrenci eklenecek? "))
+öğrenci_listesi = ["kerim aydın","ali yıldız","buse küpeli","cemil dursun"]
+i=0
+while i < öğrenci_sayısı
