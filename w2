@@ -1,15 +1,56 @@
 öğrenci_listesi = ["kerim aydın","ali yıldız","buse küpeli","cemil dursun"]
-print(öğrenci listesi)
+print(öğrenci_listesi[:])
+
+print("xxxxxxxxxx")
 
 öğrenciİsimSoyisim=input("eklemek istediğiniz öğrencinin isim ve soyismini yazınız: ")
-öğrenci listesi.append(öğrenciİsimSoyisim)
-print(öğrenci listesi)
+öğrenci_listesi.append(öğrenciİsimSoyisim)
+print("öğrenci_listesi")
 
-öğrenciİsimSoyisim=input("eklemek istediğiniz öğrencinin isim ve soyismini yazınız: ")
-öğrenci listesi.remove(öğrenciİsimSoyisim)
-print(öğrenci listesi)
+print("xxxxxxxxxx")
+
+öğrenciİsimSoyisim=input("silmek istediğiniz öğrencinin isim ve soyismini yazınız: ")
+öğrenci_listesi.remove(öğrenciİsimSoyisim)
+print("öğrenci_listesi")
 
 öğrenci_sayısı=int(input("kaç öğrenci eklenecek? "))
 öğrenci_listesi = ["kerim aydın","ali yıldız","buse küpeli","cemil dursun"]
-i=0
-while i < öğrenci_sayısı
+
+#Çoklu öğrenci ekleme         
+def multipleAdd():
+    devam_et=True
+    while devam_et==True:
+        öğrenciİsimSoyisim=input("ad soyad gir, durmak için 'stop' yaz: ").lower()
+        öğrenci_listesi.append(öğrenciİsimSoyisim)
+        if öğrenciİsimSoyisim=="stop":
+          öğrenci_listesi.remove(öğrenciİsimSoyisim)
+          devam_et=False
+          
+  #Öğrenci isimlerini ekrana yazdır.
+def ogrenciGoster():
+   
+   for i in öğrenci_listesi:
+      print(i)
+
+#Öğrenci index numarasını yazdır.
+def ogrenciNumara():
+
+   ogrenci=input("numarasını öğrenmek istedğiniz öğrencinin ismini girin")
+   öğrenci_listesi.index(ogrenci)
+#Multiple deleting students
+def multipledelete():
+   devam_et=True
+   while devam_et==True:
+       öğrenciİsimSoyisim=input("silmek istediğiniz öğrencinin ad soyad gir, durmak için 'stop' yaz: ").lower()
+       if öğrenciİsimSoyisim=="stop":
+          devam_et=False
+       else:
+           öğrenci_listesi.remove(öğrenciİsimSoyisim)
+
+def multipleAdd():
+def ogrenciGoster():
+def ogrenciNumara():
+def multipledelete():
+
+              
+        
